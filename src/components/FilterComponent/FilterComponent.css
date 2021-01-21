@@ -1,0 +1,41 @@
+.filterComponent {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.filterComponent h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.fliterBox {
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.fliterBox h4 {
+  border-bottom: 1px solid #000;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  color: #000;
+}
+
+.fliterBox .filter-options {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 190px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.fliterBox .filter-options li {
+  margin: 7px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 700px) {
+  .fliterBox {
+    padding: 10px 7px;
+  }
+}

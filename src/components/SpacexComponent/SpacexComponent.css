@@ -1,0 +1,57 @@
+.spacexListComponent {
+  padding: 0 15px;
+}
+
+.spacex {
+  background: #fff;
+  padding: 15px;
+  margin: 0 2% 2% 0;
+}
+
+.spacex .imageBox {
+  margin-bottom: 10px;
+}
+
+.spacex .imageBox img {
+  width: 100%;
+  height: auto;
+  background: #eee;
+}
+
+.spacex h6 {
+  color: #673ab7;
+}
+
+.spacex ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .spacex {
+    flex: 0 0 23%;
+  }
+}
+
+@media only screen and (min-device-width: 701px) and (max-device-width: 1024px) {
+  .spacex {
+    flex: 0 0 48%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .spacex {
+    flex: 0 0 100%;
+  }
+
+  .spacexListComponent {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  .spacexListComponent {
+    padding: 15px 15px 0;
+  }
+}
