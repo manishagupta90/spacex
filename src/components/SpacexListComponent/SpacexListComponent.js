@@ -25,7 +25,7 @@ class SpacexListComponent extends Component {
     return (
       <div className="row spacexListComponent">
         {this.props.fetchedUserList && this.props.allData.map((item, index) => (
-            <SpacexComponent item={item} key={index} />
+          <SpacexComponent item={item} key={index} />
         ))}
       </div>
     );
@@ -34,7 +34,6 @@ class SpacexListComponent extends Component {
 
 const mapStateToProps = (state) => {
   const { fetchingUserList, fetchedUserList, allData } = state.userListsReducer;
-  console.log(fetchingUserList, fetchedUserList, allData);
   return {
     fetchingUserList,
     fetchedUserList,

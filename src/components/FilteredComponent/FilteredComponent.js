@@ -1,16 +1,14 @@
-import React, { Component , useEffect } from "react";
+import React, { useEffect } from "react";
 import FilterComponent from "../FilterComponent/FilterComponent";
 import SpacexListComponent from "../SpacexListComponent/SpacexListComponent";
 import {Link, useParams} from 'react-router-dom';
 import {useDispatch} from 'react-redux';
 import UserListsAction from "../../redux/actions/userLists.action";
- 
+
 const FilteredComponent = () => {
     const params = useParams();
     const dispatch = useDispatch();
-    console.log(params,"filtd");
     useEffect( () => {
-      console.log("testsdfsdfdsf")
       dispatch(UserListsAction.modifyResearchCall(params))
     },[params])
     return (
@@ -28,7 +26,7 @@ const FilteredComponent = () => {
         </div>
       </div>
     );
-  
+
 }
 
 export default FilteredComponent;

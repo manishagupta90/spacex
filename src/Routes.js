@@ -4,8 +4,8 @@ import HomeComponent from './components/HomeComponent/HomeComponent';
 
 const routes = (
   <Switch>
-    <Route exact path='/' component={HomeComponent} />
-    <Route exact path='*' component={() => 'not found'} />
+    <Route path='/' component={HomeComponent} />
+    <Route path='*' component={() => 'not found'} />
   </Switch>
 );
 

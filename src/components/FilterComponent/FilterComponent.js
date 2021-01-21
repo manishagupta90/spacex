@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ApiService from "../../api/ApiService";
 import "./FilterComponent.css";
 import { connect } from "react-redux";
 import userListsAction from "../../redux/actions/userLists.action";
